@@ -1,5 +1,5 @@
 <h1>StaticPages#surprise</h1>
-<% (0..@iterations.to_i).each_with_index do |iteration, index| %>
+<% (0..@iterations.to_i).each do |index| %>
   <p>
   <% (0..index).each do |j| %>
     *
@@ -7,7 +7,7 @@
   </p>
 <% end %>
 <h2>El segundo perilo</h2>
-<% (0..@iterations.to_i).each_with_index do |iteration, index| %>
+<% (0..@iterations.to_i).each do |index| %>
   <p style="font-family:monospace;">
     <% if index != @iterations.to_i %>
       <%= "_ "*index %>
