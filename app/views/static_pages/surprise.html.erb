@@ -1,0 +1,17 @@
+<h1>StaticPages#surprise</h1>
+<% (0..@iterations.to_i).each_with_index do |iteration, index| %>
+  <p>
+  <% (0..index).each do |j| %>
+    *
+  <% end %>
+  </p>
+<% end %>
+<h2>El segundo perilo</h2>
+<% (0..@iterations.to_i).each_with_index do |iteration, index| %>
+  <p style="font-family:monospace;">
+    <% if index != @iterations.to_i %>
+      <%= "_ "*index %>
+      <%= '* '*((@iterations.to_i - index) * 2 - 1) %>
+    <% end %>
+  </p>
+<% end %>
