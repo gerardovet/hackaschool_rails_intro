@@ -1,9 +1,7 @@
 <h1>StaticPages#surprise</h1>
 <% (0..@iterations.to_i).each do |index| %>
   <p>
-  <% (0..index).each do |j| %>
-    *
-  <% end %>
+    <%= "* "*index %>
   </p>
 <% end %>
 <h2>El segundo perilo</h2>

@@ -7,7 +7,8 @@ class StaticPagesController < ApplicationController
   end
 
   def surprise
-    @iterations = params[:shit] if params[:shit]
+    # Assign 10 if no param is given
+    @iterations = params[:shit] || 10
   end
 
   def help
